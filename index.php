@@ -18,10 +18,10 @@ foreach($inputSort as $key => $catLevelZero) {
     	
         $children = array();	
         
-        foreach($inputSort as $key => $catLevelTwo){
+        foreach($inputSort as $key => $catLevelOne){
         	
-            if($catLevelTwo->parent != 0 && $catLevelTwo->parent == $catLevelZero->id) { 				
-                $children[] = array('id' => $catLevelTwo->id, 'parent' => $catLevelTwo->parent, 'name' => $catLevelTwo->name);  
+            if($catLevelOne->parent != 0 && $catLevelOne->parent == $catLevelZero->id) { 				
+                $children[] = array('id' => $catLevelOne->id, 'parent' => $catLevelOne->parent, 'name' => $catLevelOne->name);  
 			   }
         }	
         
